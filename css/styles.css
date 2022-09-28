@@ -287,23 +287,33 @@ img {
 
 .section-works-type {
   background-color: var(--bg-color-portfolio);
+  margin: 94px;
 }
 
-/* .type-filter {
+/* Filter */
+
+.filter {
+  background-color: var(--bg-color-portfolio);
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.type-filter-item {
-  width: 125px;
-  height: 38px;
-  background: #f5f4fa;
+
+.filter-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
   border-radius: 4px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-} */
+}
+
+.filter-item {
+}
+
+.filter-button {
+  cursor: pointer;
+}
 
 /* Card-set */
 
@@ -361,4 +371,6 @@ img {
 .card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
 }
