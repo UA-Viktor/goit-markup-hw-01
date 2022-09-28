@@ -58,12 +58,31 @@ img {
 }
 
 /* Header */
+
+.header {
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-nav {
+  display: flex;
+  /* border: 2px solid yellow; */
+  margin-left: 215px;
+}
+
 .logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none; /* Убираем подчеркивание в ссылках */
+  margin-right: 94px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .logo span {
@@ -72,19 +91,31 @@ img {
 
 /* Site nav */
 .site-nav {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none; /* Убираем подчеркивание в ссылках */
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .site-nav .link {
   color: var(--text-color-primary);
+  margin-right: 50px;
+
   text-decoration: none; /* Убираем подчеркивание в ссылках */
 }
 /* Contacts nav */
+.contact-nav {
+  display: flex;
+  /* border: 2px solid green; */
+  margin-right: 215px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .contact-nav .link {
   color: var(--text-color-secondary);
   font-style: normal;
@@ -93,6 +124,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none; /* Убираем подчеркивание в ссылках */
+  margin-left: 50px;
 }
 
 /* Свойства навидений */
