@@ -28,7 +28,7 @@
 
  */
 
-/* html {
+html {
   box-sizing: border-box;
 }
 
@@ -36,7 +36,7 @@
 *::before,
 *::after {
   box-sizing: inherit;
-} */
+}
 
 :root {
   --text-color-primary: #212121;
@@ -59,19 +59,6 @@ body {
 
 ul {
   list-style: none; /* сбрасывает точки в списке */
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 img {
@@ -85,8 +72,6 @@ img {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .section {
@@ -125,11 +110,6 @@ img {
 
 .logo span {
   color: var(--text-color-accent);
-}
-
-.list {
-  margin: 0;
-  padding: 0;
 }
 
 /* Site nav */
@@ -396,8 +376,8 @@ img {
 
 /* Card-set */
 
-.container-portfolio {
-  width: 1200px;
+.container {
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
