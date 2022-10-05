@@ -191,7 +191,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   margin-bottom: 10px;
@@ -201,7 +200,6 @@ img {
   color: var(--text-color-secondary);
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* Чим займаємось */
@@ -211,7 +209,6 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -221,10 +218,7 @@ img {
 
 .work-list {
   display: flex;
-}
-
-.work-card:not(:last-child) {
-  margin-right: 30px;
+  gap: 30px;
 }
 
 /* Наша Команда */
@@ -239,7 +233,6 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
@@ -271,7 +264,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
 
@@ -281,7 +273,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -319,7 +310,6 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 .address a {
@@ -327,7 +317,6 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -351,7 +340,6 @@ img {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .filter-button {
@@ -409,7 +397,6 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 
 /* Тень карточки (сейчас необязательно) */
