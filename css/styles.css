@@ -1,43 +1,3 @@
-/* 
-
-цвета шапка
-лого 000000, 2196F3
-
-Текст
-Основной  212121
-Выделение 2196F3
-
-почта и телефон 
-  текст     757575
-  выделение 2196F3
-
-Секция
-шапка текст
-  212121
-текст
-  757575
-
-Цвет текста подвала
-  FFFFFF
-
-Цвет фона
-шапка и футер   2F303A
-основной белый  FFFFFF
-вторичный серый F5F4FA
-
-
- */
-
-/* html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
-
 /* Переменные */
 :root {
   --text-color-primary: #212121;
@@ -58,12 +18,6 @@ body {
   line-height: 1.5;
 }
 
-ul {
-  list-style: none; /* сбрасывает точки в списке */
-  margin: 0;
-  padding: 0;
-}
-
 h1,
 h2,
 h3,
@@ -73,6 +27,12 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+ul {
+  list-style: none; /* сбрасывает точки в списке */
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -86,7 +46,7 @@ img {
   margin: 0;
 }
 
-.container-main {
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -98,14 +58,6 @@ img {
 }
 
 /* Header */
-.header {
-  /* display: inline-block; */
-  /* vertical-align: middle; */
-  /* justify-content: space-between; */
-  /* border: 2px solid red; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-}
 
 .header-main {
   display: flex;
@@ -116,10 +68,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-
-  /* display: inline-block; */
-  /* border: 2px solid yellow; */
-  /* margin-left: 215px; */
 }
 
 .logo {
@@ -130,9 +78,6 @@ img {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none; /* Убираем подчеркивание в ссылках */
-  /* margin-right: 94px; */
-  /* margin-top: 24px; */
-  /* margin-bottom: 25px; */
 }
 
 .logo span {
@@ -188,43 +133,44 @@ img {
 /* Шапка. Основной экран */
 .hero {
   background-color: var(--bg-color-head-footer);
-  text-align: center;
 }
 
 /**** Hero ****/
+
+.hero-container {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
   color: var(--text-color-head-footer);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .hero .button {
+  padding: 10px 32px;
   color: var(--text-color-head-footer);
+
   background-color: var(--text-color-accent);
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  margin-bottom: 200px;
-  /* text-decoration: none; Убираем подчеркивание в ссылках */
-  display: inline-block;
-  width: 216px;
-  height: 50px;
-  left: 692px;
-  top: 430px;
-  cursor: pointer;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
-  border: #2196f3;
+}
+
+.button:active {
+  background: #188ce8;
 }
 
 /* ********* Main ********* */
@@ -371,7 +317,6 @@ img {
 
 .footer .street {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -380,58 +325,52 @@ img {
 .address a {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 /* ******* Страница Портфолио ******* */
 
-/* ------ */
-
-/* Filter */
-
-.section-works-type {
-  background-color: var(--bg-color-portfolio);
-  margin: 94px;
-}
-
 /* Filter */
 
 .filter {
-  background-color: var(--bg-color-portfolio);
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 34px;
 }
 
 .filter-set {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   justify-content: center;
-  border-radius: 4px;
+  gap: 8px;
 }
 
 .filter-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .filter-button {
+  padding: 6px 22px;
   cursor: pointer;
+  border: 0;
+  background-color: var(--bg-color-secondary);
+  border-radius: 4px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--text-color-accent);
+  color: var(--text-color-head-footer);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Card-set */
-
-.container-portfolio {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--bg-color-portfolio);
-}
 
 .card-set {
   padding: 0;
